@@ -1,0 +1,59 @@
+{
+  "skip-message": " [skip ci]",
+  "filters": [
+    {
+      "filter": "ignorable",
+      "data": [ "*.md", "**/README*", "**/CODEOWNERS", "**/LICENSE*", "**/.gitignore" ]
+    },
+    {
+      "filter": "comments",
+      "data": [
+        {
+          "patterns": [ "*.{C,c,cc,cjs,cpp,cs,cxx,groovy,gsh,gvy,gy,h,h,h,hpp,java,js,kt,ktm,kts,m,mjs,mm,php,rs,scala,swift,ts,tsx}" ],
+          "single": "//",
+          "multi-start": "/*",
+          "multi-end": "*/"
+        },
+        {
+          "patterns": [ "*.py" ],
+          "single": "#",
+          "multi-start": "'''",
+          "multi-end": "'''"
+        },
+        {
+          "patterns": [ "*.{R,bash,pl,pm,properties,r,rb,sh,t}" ],
+          "single": "#"
+        },
+        {
+          "patterns": [ "*.{hs,lhs,lua}" ],
+          "single": "--"
+        },
+        {
+          "patterns": [ "*.{hs,lhs,lua}" ],
+          "single": "--"
+        },
+        {
+          "patterns": [ "*.sql" ],
+          "single": "--",
+          "multi-start": "/*",
+          "multi-end": "*/"
+        },
+        {
+          "patterns": [ "*.{erl,hrl}" ],
+          "single": "%"
+        },
+        {
+          "patterns": [ "*.m" ],
+          "single": "%",
+          "multi-start": "%{ ",
+          "multi-end": " %}"
+        },
+        {
+          "patterns": [ "*.xml" ],
+          "multi-start": "<!--",
+          "multi-end": "-->"
+        }
+    ]
+    }
+  ]
+}

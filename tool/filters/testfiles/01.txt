@@ -1,0 +1,2 @@
+Hello // with leading whitespace
+World// without leading whitespace
