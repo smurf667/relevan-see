@@ -1,5 +1,6 @@
 dist/
 bin/
+!hook-installer/bin/
 node_modules/
 *.log
 *.tgz
