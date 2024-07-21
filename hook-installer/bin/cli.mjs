@@ -45,7 +45,7 @@ const argv = process.argv.slice(2);
 
 const root = path.join(process.cwd(), '.git');
 if (!fs.existsSync(root)) {
-  console.error('Must be run from the root of a Git repository, but got:', root);
+  console.error('Must be run from the root of a Git repository, but got:', process.cwd());
   process.exit(1);
 }
 
